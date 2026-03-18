@@ -62,7 +62,7 @@ graph TD
     %% Path B: Semantic Search
     E -->|SemanticQueryEvent| H(LLM Generation):::step
     H --> G
-    ```
+```
 
 ---
 
