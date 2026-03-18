@@ -2,7 +2,7 @@
 > **Bridging the Knowledge Gap: A Multi-Layered RAG System for Developer Documentation.**
 
 [![LlamaIndex](https://img.shields.io/badge/Orchestration-LlamaIndex-blue)](https://www.llamaindex.ai/)
-[![Cohere](https://img.shields.io/badge/LLM-Cohere%20Command--R--Plus-green)](https://cohere.com/)
+[![Cohere](https://img.shields.io/badge/LLM-Cohere%20Command--R--Plus-green)](https://dashboard.cohere.com/)
 [![Pinecone](https://img.shields.io/badge/VectorDB-Pinecone-blueviolet)](https://www.pinecone.io/)
 
 ---
@@ -42,25 +42,33 @@ graph TD
     %% Style Definitions
     classDef start fill:#f9f,stroke:#333,stroke-width:2px,color:black;
     classDef step fill:#e1f5fe,stroke:#0277bd,stroke-width:1px,color:black,rx:5,ry:5;
-    classDef event fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:black,stroke-dasharray: 5 5;
+    classDef decision fill:#fff9c4,stroke:#fbc02d,stroke-width:2px,color:black;
+    classDef retry fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:black,stroke-dasharray: 5 5;
     classDef stop fill:#ffcc80,stroke:#ef6c00,stroke-width:2px,color:black;
 
     %% Entry Point
-    A([User Query]):::start -->|StartEvent| B(Security & Validation):::step
+    A([User Query]):::start --> B(Security & Validation):::step
+    B --> C{Autonomous Router}:::decision
 
-    %% Validation Stage
-    B -->|InputVerifiedEvent| C{Autonomous Router}:::step
-
-    %% The Routing Logic
+    %% Path A: Structured
     C -->|Target: Structured| D[JSON Extraction]:::step
+    D --> F(Context Synthesis):::step
+
+    %% Path B: Semantic (The Detailed Flow)
     C -->|Target: Semantic| E[Vector DB Retrieval]:::step
-
-    %% Path A: Structured Data
-    D -->|StructuredQueryEvent| F(Context Synthesis):::step
+    E --> E_Check{Answer Found?}:::decision
+    
+    %% Synonym Logic
+    E_Check -->|No| E_Retry[Expand Query: Synonyms & Context]:::retry
+    E_Retry --> E_Refetch[Re-query Pinecone]:::step
+    E_Refetch --> E_Check2{Answer Found?}:::decision
+    
+    %% Final Outcomes
+    E_Check -->|Yes| H(LLM Generation):::step
+    E_Check2 -->|Yes| H
+    E_Check2 -->|No| I[Return Error: No Context Found]:::stop
+    
     F --> G([Final Response]):::stop
-
-    %% Path B: Semantic Search
-    E -->|SemanticQueryEvent| H(LLM Generation):::step
     H --> G
 ```
 
@@ -75,6 +83,11 @@ graph TD
 ---
 
 ## 🚀 Setup & Installation
+
+Before running the application, you need to obtain API keys from the following services:
+
+1.  **Cohere API:** [Create a free account here](https://dashboard.cohere.com/welcome/register) to get your LLM and Embedding key.
+2.  **Pinecone DB:** [Sign up for Pinecone here](https://www.pinecone.io/) to create your vector index (Dimension: 1024).
 
 ### 1. Environment Setup
 Create a `.env` file in the root directory to store your credentials:
