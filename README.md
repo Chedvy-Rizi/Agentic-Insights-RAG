@@ -37,7 +37,9 @@ The system is built on a robust **Event-Driven Workflow** that manages the lifec
 3. **Context Injection:** The retrieved data is injected into a specialized prompt to ensure the answer is grounded in the project's specific context.
 
 ### 📊 Workflow Visualization
-![Workflow Diagram](./flow_imag.png)
+<p align="center">
+  <img src="./flow_imag.png" width="70%" />
+</p>
 
 ---
 
