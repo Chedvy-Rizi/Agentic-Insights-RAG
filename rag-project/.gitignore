@@ -1,24 +1,27 @@
-# סביבה וירטואלית (לא מעלים את כל התיקייה של ה-venv)
+# Python Environment (התיקיות הכבדות)
+.venv/
 venv/
+lib/
+bin/
+include/
+
+# API Keys & Secrets (הכי חשוב - אבטחה!)
 .env
 
-# קבצי הגדרות של פייתון
+# Python Cache (תיקיות זמניות של פייתון)
 __pycache__/
 *.py[cod]
 *$py.class
 
-# קבצי מפתחות ואבטחה (קריטי!)
-.env
-keys.txt
-*.pem
-*.key
+# IDE Settings (הגדרות אישיות של VS Code)
+.vscode/
 
-# קבצי נתונים מקומיים (אם יש לך DB מקומי או לוגים)
-*.log
-data/
-*.json
-!example_data.json  # (חריגה: אם את כן רוצה להעלות קובץ דוגמה אחד)
+# UI Temporary Files (תיקיות של Gradio)
+.gradio/
 
-# הגדרות של מערכת ההפעלה
+# System Files
 .DS_Store
 Thumbs.db
+
+# Optional: Large Data Files (אם את לא רוצה להעלות את ה-JSON)
+# structured_data.json

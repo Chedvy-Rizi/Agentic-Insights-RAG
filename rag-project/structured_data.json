@@ -1,0 +1,489 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-03-17T23:41:34.019958",
+  "sources": [
+    {
+      "tool": "multi-agent-extraction",
+      "root_path": "C:/Users/user1/Desktop/תכנותתת/שנה ב/AI/RAG/data-project",
+      "files": [
+        {
+          "path": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.claude_docs\\architecture.md",
+          "last_modified": "2026-03-17T23:40:00.429383"
+        },
+        {
+          "path": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.claude_docs\\decisions.md",
+          "last_modified": "2026-03-17T23:40:00.429383"
+        },
+        {
+          "path": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.claude_docs\\ui-rules.md",
+          "last_modified": "2026-03-17T23:40:00.429383"
+        },
+        {
+          "path": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.copilot_docs\\architecture.md",
+          "last_modified": "2026-03-17T23:40:00.429383"
+        },
+        {
+          "path": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.copilot_docs\\decisions.md",
+          "last_modified": "2026-03-17T23:40:00.429383"
+        },
+        {
+          "path": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.copilot_docs\\ui-rules.md",
+          "last_modified": "2026-03-17T23:40:00.430384"
+        },
+        {
+          "path": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.windsurf_docs\\architecture.md",
+          "last_modified": "2026-03-17T23:40:00.430384"
+        },
+        {
+          "path": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.windsurf_docs\\decisions.md",
+          "last_modified": "2026-03-17T23:40:00.430384"
+        },
+        {
+          "path": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.windsurf_docs\\ui-rules.md",
+          "last_modified": "2026-03-17T23:40:00.430384"
+        }
+      ]
+    }
+  ],
+  "items": {
+    "decisions": [
+      {
+        "id": "dec-1",
+        "title": "JWT over Session-Based Authentication",
+        "summary": "JWTs with dual-token strategy for stateless auth.",
+        "tags": [
+          "auth",
+          "jwt",
+          "stateless",
+          "refresh-token"
+        ],
+        "source": {
+          "tool": "claude_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.claude_docs\\decisions.md",
+          "anchor": "ADR-001"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "dec-2",
+        "title": "PostgreSQL over NoSQL",
+        "summary": "PostgreSQL for relational data with Prisma ORM.",
+        "tags": [
+          "database",
+          "postgresql",
+          "prisma",
+          "nosql"
+        ],
+        "source": {
+          "tool": "claude_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.claude_docs\\decisions.md",
+          "anchor": "ADR-002"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "dec-3",
+        "title": "RTL-First Component Architecture",
+        "summary": "CSS Logical Properties for RTL support.",
+        "tags": [
+          "rtl",
+          "css",
+          "logical-properties",
+          "hebrew"
+        ],
+        "source": {
+          "tool": "claude_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.claude_docs\\decisions.md",
+          "anchor": "ADR-003"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "dec-4",
+        "title": "Zustand over Redux",
+        "summary": "Zustand for shared client state, React Query for server state.",
+        "tags": [
+          "zustand",
+          "react-query",
+          "redux",
+          "state-management"
+        ],
+        "source": {
+          "tool": "claude_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.claude_docs\\decisions.md",
+          "anchor": "ADR-004"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "dec-5",
+        "title": "Vite over Create React App",
+        "summary": "Vite for React frontend build toolchain.",
+        "tags": [
+          "vite",
+          "create-react-app",
+          "react",
+          "build-tool"
+        ],
+        "source": {
+          "tool": "claude_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.claude_docs\\decisions.md",
+          "anchor": "ADR-005"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "dec-6",
+        "title": "JWT-Based Authentication",
+        "summary": "JWT tokens for stateless authentication.",
+        "tags": [
+          "auth",
+          "jwt",
+          "stateless",
+          "security"
+        ],
+        "source": {
+          "tool": "copilot_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.copilot_docs\\decisions.md",
+          "anchor": "Decision 1"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "dec-7",
+        "title": "Enhanced User Table Fields",
+        "summary": "Add `last_login` and `user_role` fields to user table.",
+        "tags": [
+          "database",
+          "user-table",
+          "last_login",
+          "user_role"
+        ],
+        "source": {
+          "tool": "copilot_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.copilot_docs\\decisions.md",
+          "anchor": "Decision 2"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "dec-8",
+        "title": "Technology Stack Selection",
+        "summary": "PostgreSQL, Node.js/Express, React for tech stack.",
+        "tags": [
+          "tech-stack",
+          "postgresql",
+          "node.js",
+          "express",
+          "react"
+        ],
+        "source": {
+          "tool": "copilot_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.copilot_docs\\decisions.md",
+          "anchor": "Decision 3"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "dec-9",
+        "title": "RTL Support Implementation",
+        "summary": "CSS logical properties and React component design for RTL.",
+        "tags": [
+          "rtl",
+          "css",
+          "react",
+          "hebrew"
+        ],
+        "source": {
+          "tool": "copilot_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.copilot_docs\\decisions.md",
+          "anchor": "Decision 4"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "dec-10",
+        "title": "Navy Blue Primary Color",
+        "summary": "Navy blue (#001f3f) as primary color for branding.",
+        "tags": [
+          "color",
+          "branding",
+          "navy-blue"
+        ],
+        "source": {
+          "tool": "copilot_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.copilot_docs\\decisions.md",
+          "anchor": "Decision 5"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "dec-11",
+        "title": "JWT-Based Authentication",
+        "summary": "JWT tokens for stateless authentication.",
+        "tags": [
+          "auth",
+          "jwt",
+          "stateless",
+          "security"
+        ],
+        "source": {
+          "tool": "windsurf_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.windsurf_docs\\decisions.md",
+          "anchor": "Decision: JWT-Based Authentication"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "dec-12",
+        "title": "Password Hashing with bcrypt",
+        "summary": "bcrypt for secure password hashing.",
+        "tags": [
+          "security",
+          "password-hashing",
+          "bcrypt"
+        ],
+        "source": {
+          "tool": "windsurf_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.windsurf_docs\\decisions.md",
+          "anchor": "Decision: Password Hashing with bcrypt"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "dec-13",
+        "title": "PostgreSQL as Primary Database",
+        "summary": "PostgreSQL for primary database with Prisma ORM.",
+        "tags": [
+          "database",
+          "postgresql",
+          "prisma",
+          "orm"
+        ],
+        "source": {
+          "tool": "windsurf_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.windsurf_docs\\decisions.md",
+          "anchor": "Decision: PostgreSQL as Primary Database"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "dec-14",
+        "title": "UUID Primary Keys",
+        "summary": "UUIDs as primary keys for security and scalability.",
+        "tags": [
+          "database",
+          "primary-keys",
+          "uuid",
+          "security"
+        ],
+        "source": {
+          "tool": "windsurf_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.windsurf_docs\\decisions.md",
+          "anchor": "Decision: UUID Primary Keys"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "dec-15",
+        "title": "Enhanced User Schema",
+        "summary": "Add `last_login`, `user_role`, `is_active`, `created_at`, `updated_at` fields to user table.",
+        "tags": [
+          "database",
+          "user-table",
+          "last_login",
+          "user_role",
+          "is_active",
+          "created_at",
+          "updated_at"
+        ],
+        "source": {
+          "tool": "windsurf_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.windsurf_docs\\decisions.md",
+          "anchor": "Decision: Enhanced User Schema with Additional Fields"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "dec-16",
+        "title": "React 18 with TypeScript",
+        "summary": "React 18 with TypeScript for frontend.",
+        "tags": [
+          "frontend",
+          "react",
+          "typescript"
+        ],
+        "source": {
+          "tool": "windsurf_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.windsurf_docs\\decisions.md",
+          "anchor": "Decision: React 18 with TypeScript"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "dec-17",
+        "title": "Tailwind CSS for Styling",
+        "summary": "Tailwind CSS for styling with RTL support.",
+        "tags": [
+          "styling",
+          "tailwind-css",
+          "rtl"
+        ],
+        "source": {
+          "tool": "windsurf_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.windsurf_docs\\decisions.md",
+          "anchor": "Decision: Tailwind CSS for Styling"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "dec-18",
+        "title": "RESTful API with OpenAPI",
+        "summary": "RESTful API with OpenAPI specification for clear contract.",
+        "tags": [
+          "api",
+          "rest",
+          "openapi"
+        ],
+        "source": {
+          "tool": "windsurf_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.windsurf_docs\\decisions.md",
+          "anchor": "Decision: RESTful API with OpenAPI Specification"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "dec-19",
+        "title": "OpenAPI 3.0 Specification",
+        "summary": "OpenAPI 3.0 for API documentation and contract.",
+        "tags": [
+          "api",
+          "openapi",
+          "documentation"
+        ],
+        "source": {
+          "tool": "windsurf_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.windsurf_docs\\decisions.md",
+          "anchor": "Decision: OpenAPI 3.0 Specification"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "dec-20",
+        "title": "Prisma ORM",
+        "summary": "Prisma ORM for type-safe database access and migration management.",
+        "tags": [
+          "database",
+          "orm",
+          "prisma",
+          "type-safety"
+        ],
+        "source": {
+          "tool": "windsurf_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.windsurf_docs\\decisions.md",
+          "anchor": "Decision: Prisma ORM"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "dec-21",
+        "title": "Vite as Build Tool",
+        "summary": "Vite for fast development server and builds.",
+        "tags": [
+          "build-tool",
+          "vite",
+          "development"
+        ],
+        "source": {
+          "tool": "windsurf_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.windsurf_docs\\decisions.md",
+          "anchor": "Decision: Vite as Build Tool"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "dec-22",
+        "title": "Jest for Unit Testing",
+        "summary": "Jest for unit and integration testing.",
+        "tags": [
+          "testing",
+          "jest",
+          "unit-testing",
+          "integration-testing"
+        ],
+        "source": {
+          "tool": "windsurf_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.windsurf_docs\\decisions.md",
+          "anchor": "Decision: Jest for Unit Testing"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "dec-23",
+        "title": "Docker Containerization",
+        "summary": "Docker for application deployment and consistency.",
+        "tags": [
+          "deployment",
+          "docker",
+          "containerization"
+        ],
+        "source": {
+          "tool": "windsurf_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.windsurf_docs\\decisions.md",
+          "anchor": "Decision: Docker Containerization"
+        },
+        "observed_at": "2024-05-13"
+      }
+    ],
+    "rules": [
+      {
+        "id": "rule-1",
+        "rule": "Use logical properties for RTL support.",
+        "scope": "CSS",
+        "notes": "Avoid physical directional properties.",
+        "source": {
+          "tool": "claude_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.claude_docs\\ui-rules.md",
+          "anchor": "The Rule: Logical Properties Everywhere"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "rule-2",
+        "rule": "Directional icons must be mirrored in RTL.",
+        "scope": "UI",
+        "notes": "Use `.flip-rtl` class for directional icons.",
+        "source": {
+          "tool": "claude_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.claude_docs\\ui-rules.md",
+          "anchor": "Directional Icons"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "rule-3",
+        "rule": "Set `<html dir=\"...\">` for RTL direction.",
+        "scope": "HTML",
+        "notes": "Direction is set once on `<html>` by i18n provider.",
+        "source": {
+          "tool": "claude_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.claude_docs\\ui-rules.md",
+          "anchor": "Direction & RTL Support"
+        },
+        "observed_at": "2024-05-13"
+      },
+      {
+        "id": "rule-4",
+        "rule": "Use Heebo font for Hebrew typography.",
+        "scope": "Typography",
+        "notes": "Increase line height to 1.7 for Hebrew body text.",
+        "source": {
+          "tool": "claude_docs",
+          "file": "C:\\Users\\user1\\Desktop\\תכנותתת\\שנה ב\\AI\\RAG\\data-project\\.claude_docs\\ui-rules.md",
+          "anchor": "Hebrew Typography"
+        },
+        "observed_at": "2024-05-13"
+      }
+    ]
+  }
+}
